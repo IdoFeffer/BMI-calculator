@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-primary);
+}
+
+/* קונטיינר ורשתות */
+.container {
+  width: min(1120px, 92vw);
+  margin-inline: auto;
+  padding-block: var(--spacing-700);
+}
+.grid-2 {
+  display: grid;
+  gap: var(--spacing-700);
+  grid-template-columns: 1.1fr 1fr;
+}
+.grid-3 {
+  display: grid;
+  gap: var(--spacing-600);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .grid-2,
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* דף אחד עם Scroll Snap על ה-main */
+.snap {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+.panel {
+  min-height: 100vh;
+  scroll-snap-align: start;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* כרטיס בסיסי לשימוש חוזר */
+.card {
+  background: #fff;
+  border: 1px solid #eef2ff;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(13, 39, 80, 0.06);
+  padding: var(--spacing-600);
+}
+
+/* גרדיאנט עדין בסקשן הראשון (מהטוקן שתקנו) */
+.bg-gradient {
+  position: absolute;
+  inset: 0;
+  background: var(--gradient-1);
+  opacity: 0.6;
+  pointer-events: none;
+  z-index: -1;
+  margin-right: 130px;
+}
+
+/* פסים בהירים ברקע כללי כמו בפיגמה */
+.bg-stripes {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background: repeating-linear-gradient(
+    to left,
+    rgba(13, 39, 80, 0.04) 0,
+    rgba(13, 39, 80, 0.04) 1px,
+    transparent 1px,
+    transparent 80px
+  );
+}

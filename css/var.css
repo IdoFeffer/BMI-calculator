@@ -1,0 +1,144 @@
+:root {
+  /* ---------- Colors ---------- */
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Grey */
+  --grey-500: #5e6e85;
+  --grey-300: #acc1de;
+
+  /* Blue */
+  --blue-900: #253347;
+  --blue-500: #345ff6;
+  --blue-300: #b3d3f1;
+  --blue-100: #e1e7fe;
+
+  /* Gradient */
+  --gradient-1: linear-gradient(90deg, #d3e0fe 0%, #d6eaf6 100%);
+
+  /* --------------------------------------------------------------------- */
+  /* Spcing  */
+
+  --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-700: 56px;
+  --spacing-900: 72px;
+  --spacing-1100: 88px;
+  --spacing-1200: 96px;
+  --spacing-1300: 104px;
+  --spacing-1600: 128px;
+  --spacing-1800: 144px;
+
+  /* --------------------------------------------------------------------- */
+  /* ---------- Typography ---------- */
+
+/* Font family + weights */
+  --ff-primary: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Line heights */
+  --lh-110: 110%;
+  --lh-120: 120%;
+  --lh-150: 150%;
+
+  /* Letter spacing (Figma %) */
+  --ls--5: -0.05em; /* -5% */
+  --ls-0: 0em;      /*  0% */
+
+  /* -------- Text Presets (sizes) -------- */
+  --fs-preset-1: 64px; /* Inter SemiBold, 110%, -5% */
+  --fs-preset-2: 48px; /* Inter SemiBold, 110%, -5% */
+  --fs-preset-3: 32px; /* Inter SemiBold, 110%, -5% */
+  --fs-preset-4: 24px; /* Inter SemiBold, 120%, -5% */
+  --fs-preset-5: 20px; /* Inter SemiBold, 120%, -5% */
+
+  --fs-preset-6: 16px; /* 150%, 0% */
+  --fs-preset-7: 14px; /* 150%, 0% */
+}
+
+/* P1 – Inter SemiBold, 64 / 110% / -5% */
+.text-preset-1 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-preset-1);
+  line-height: var(--lh-110);
+  letter-spacing: var(--ls--5);
+}
+
+/* P2 – Inter SemiBold, 48 / 110% / -5% */
+.text-preset-2 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-preset-2);
+  line-height: var(--lh-110);
+  letter-spacing: var(--ls--5);
+}
+
+/* P3 – Inter SemiBold, 32 / 110% / -5% */
+.text-preset-3 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-preset-3);
+  line-height: var(--lh-110);
+  letter-spacing: var(--ls--5);
+}
+
+/* P4 – Inter SemiBold, 24 / 120% / -5% */
+.text-preset-4 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-preset-4);
+  line-height: var(--lh-120);
+  letter-spacing: var(--ls--5);
+}
+
+/* P5 – Inter SemiBold, 20 / 120% / -5% */
+.text-preset-5 {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-preset-5);
+  line-height: var(--lh-120);
+  letter-spacing: var(--ls--5);
+}
+
+/* P6 – SemiBold, 16 / 150% / 0% */
+.text-preset-6-semibold {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-preset-6);
+  line-height: var(--lh-150);
+  letter-spacing: var(--ls-0);
+}
+
+/* P6 – Regular, 16 / 150% / 0% */
+.text-preset-6-regular {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-preset-6);
+  line-height: var(--lh-150);
+  letter-spacing: var(--ls-0);
+}
+
+/* P7 – Bold, 14 / 150% / 0% */
+.text-preset-7-bold {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-preset-7);
+  line-height: var(--lh-150);
+  letter-spacing: var(--ls-0);
+}
+
+/* P7 – Regular, 14 / 150% / 0% */
+.text-preset-7-regular {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-preset-7);
+  line-height: var(--lh-150);
+  letter-spacing: var(--ls-0);}
