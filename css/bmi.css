@@ -1,0 +1,34 @@
+.card {
+  background: #fff;
+  border: 1px solid #eef2ff;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(13, 39, 80, 0.06);
+  padding: var(--spacing-600);
+}
+
+.height,
+.weight {
+  display: flex;
+  flex-direction: column;
+}
+.height input,
+.weight input {
+  max-width: 238px;
+  height: 61px;
+  padding: var(--spacing-200) var(--spacing-300);
+}
+
+.bmi-title {
+  font-size: var(--fs);
+}
+
+.input-container {
+  gap: var(--spacing-300);
+  border-radius: 12px;
+}
+
+.input-container p {
+  color: var(--grey-500);
+  margin-top: 0;
+  margin-bottom: 8px;
+}

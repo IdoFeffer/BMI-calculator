@@ -4,16 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>BMI Calculator</title>
-
-    <!-- Inter (אפשר להחליף לטעינה מקומית בהמשך) -->
     <link rel="stylesheet" href="css/main.css" />
-
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/base.css" />
   </head>
   <body>
     <main class="snap">
-      <!-- 1) Hero + קלкуляטור -->
+      <!-- 1) Main -->
       <section id="hero" class="panel">
         <div class="container grid-2">
           <div class="hero-copy">
@@ -31,8 +26,28 @@
           </div>
 
           <aside class="bmi-card card">
-            <!-- TODO: כרטיס הקלט (metric/imperial, שדות, תוצאה) -->
-             
+            <p class="text-preset-4">Enter your details below</p>
+            <div class="checkbox-contaienr flex-row">
+              <div class="opt-1">
+                <input type="checkbox" id="opt-metric" />
+                <label for="opt-metric">Metric</label>
+              </div>
+              <div class="opt-2">
+                <input type="checkbox" id="opt-Imperial" />
+                <label for="opt-imperial">Imperial</label>
+              </div>
+            </div>
+
+            <div class="input-container flex-row">
+              <div class="height text-preset-7-regular">
+                <p>Height</p>
+                <input type="number" placeholder="cm" class="text-preset-4" />
+              </div>
+              <div class="weight text-preset-7-regular">
+                <p>Weight</p>
+                <input type="number" placeholder="kg" class="text-preset-4" />
+              </div>
+            </div>
           </aside>
         </div>
         <div class="bg-gradient"></div>

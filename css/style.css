@@ -45,15 +45,6 @@ body {
   align-items: center;
 }
 
-/* כרטיס בסיסי לשימוש חוזר */
-.card {
-  background: #fff;
-  border: 1px solid #eef2ff;
-  border-radius: 20px;
-  box-shadow: 0 12px 24px rgba(13, 39, 80, 0.06);
-  padding: var(--spacing-600);
-}
-
 /* גרדיאנט עדין בסקשן הראשון (מהטוקן שתקנו) */
 .bg-gradient {
   position: absolute;
