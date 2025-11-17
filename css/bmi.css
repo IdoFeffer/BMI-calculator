@@ -26,7 +26,7 @@
   outline: none;
 
   padding-inline-start: var(--spacing-300);
-  padding-inline-end: calc(var(--spacing-900)); /* תן מקום ל-"kg/cm" */
+  padding-inline-end: calc(var(--spacing-900)); 
 
   text-align: right;
   transition: border-color 0.2s ease;
