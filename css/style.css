@@ -56,16 +56,3 @@ body {
   margin-right: 130px;
 }
 
-/* פסים בהירים ברקע כללי כמו בפיגמה */
-.bg-stripes {
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  background: repeating-linear-gradient(
-    to left,
-    rgba(13, 39, 80, 0.04) 0,
-    rgba(13, 39, 80, 0.04) 1px,
-    transparent 1px,
-    transparent 80px
-  );
-}
