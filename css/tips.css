@@ -23,6 +23,7 @@
 
 .tips-header{
 margin: var(--spacing-600) 0 var(--spacing-300);
+color: var(--blue-900);
 }
 
 .tip-icon {

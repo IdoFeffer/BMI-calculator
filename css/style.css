@@ -10,7 +10,7 @@ body {
 .container {
   width: min(1120px, 92vw);
   margin-inline: auto;
-  padding-block: var(--spacing-700);
+  /* padding-block: var(--spacing-700); */
 }
 
 @media (max-width: 900px) {
@@ -20,7 +20,6 @@ body {
   }
 }
 
-/* דף אחד עם Scroll Snap על ה-main */
 .snap {
   height: 100vh;
   overflow-y: auto;
@@ -34,7 +33,6 @@ body {
   align-items: center;
 }
 
-/* גרדיאנט עדין בסקשן הראשון (מהטוקן שתקנו) */
 .bg-gradient {
   position: absolute;
   inset: 0;

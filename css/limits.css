@@ -1,0 +1,29 @@
+
+.limitations {
+    width: 564px;
+}
+.limits-main-header {
+    margin: 0 0 var(--spacing-400);
+    color: var(--blue-900);
+}
+.limits-p {
+    margin: 0px;
+    color: var(--grey-500);
+}
+
+.cards-flow {
+    margin: var(--spacing-1300) var(--spacing-1800);
+}
+
+.limit-card {
+    width: 365px;
+    padding: var(--spacing-400);
+}
+
+.limit-p {
+    margin: 0px;
+}
+
+.limit-header {
+    margin: 0 0 var(--spacing-200);
+}
