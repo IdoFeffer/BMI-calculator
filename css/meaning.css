@@ -1,0 +1,31 @@
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-1100);
+  align-items: center;
+}
+
+.man-eating {
+  display: block;
+  max-width: 564px;
+  height: auto;
+}
+.meaning-card {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 465px;
+  margin-top: 10em;
+}
+
+.meaning-h2 {
+  margin-top: 0px;
+  margin-bottom: var(--spacing-400);
+}
+
+.meaning-p {
+  color: var(--grey-500);
+  margin: 0px;
+}

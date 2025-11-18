@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/font/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('assets/font/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600; /* נשתמש בו גם ל-bold */
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   /* ---------- Colors ---------- */
   --white: #ffffff;
@@ -37,8 +53,9 @@
   /* --------------------------------------------------------------------- */
   /* ---------- Typography ---------- */
 
-/* Font family + weights */
-  --ff-primary: "Inter", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  /* Font family + weights */
+  --ff-primary: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto,
+    sans-serif;
   --fw-regular: 400;
   --fw-semibold: 600;
   --fw-bold: 700;
@@ -50,7 +67,7 @@
 
   /* Letter spacing (Figma %) */
   --ls--5: -0.05em; /* -5% */
-  --ls-0: 0em;      /*  0% */
+  --ls-0: 0em; /*  0% */
 
   /* -------- Text Presets (sizes) -------- */
   --fs-preset-1: 64px; /* Inter SemiBold, 110%, -5% */
@@ -141,4 +158,5 @@
   font-weight: var(--fw-regular);
   font-size: var(--fs-preset-7);
   line-height: var(--lh-150);
-  letter-spacing: var(--ls-0);}
+  letter-spacing: var(--ls-0);
+}

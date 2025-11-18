@@ -7,17 +7,12 @@ body {
   font-family: var(--ff-primary);
 }
 
-/* קונטיינר ורשתות */
 .container {
   width: min(1120px, 92vw);
   margin-inline: auto;
   padding-block: var(--spacing-700);
 }
-.grid-2 {
-  display: grid;
-  gap: var(--spacing-700);
-  grid-template-columns: 1.1fr 1fr;
-}
+
 .grid-3 {
   display: grid;
   gap: var(--spacing-600);
