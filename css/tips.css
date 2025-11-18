@@ -1,0 +1,47 @@
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-400);
+}
+
+.container-tips {
+    padding: 0px;
+}
+
+.tip-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 320px; 
+}
+
+.tips-p {
+    margin: 0px 0px;
+    color: var(--grey-500);
+    width: 365px;
+}
+
+.tips-header{
+margin: var(--spacing-600) 0 var(--spacing-300);
+}
+
+.tip-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-pink {
+  background-color: #f8f8f8;
+}
+
+.icon-orange {
+  background-color: #fff6eb;
+}
+
+.icon-blue {
+  background-color: #e6f8f6;
+}
