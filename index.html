@@ -29,11 +29,22 @@
             <p class="text-preset-4">Enter your details below</p>
             <div class="checkbox-container flex-row">
               <div class="opt-1">
-                <input type="radio" id="opt-metric" />
+                <input
+                  type="radio"
+                  id="opt-metric"
+                  name="unit"
+                  value="metric"
+                  checked
+                />
                 <label for="opt-metric">Metric</label>
               </div>
               <div class="opt-2">
-                <input type="radio" id="opt-imperial" />
+                <input
+                  type="radio"
+                  id="opt-imperial"
+                  name="unit"
+                  value="imperial"
+                />
                 <label for="opt-imperial">Imperial</label>
               </div>
             </div>
@@ -41,13 +52,13 @@
             <div class="input-container flex-row">
               <div class="height text-preset-7-regular">
                 <p>Height</p>
-                <input type="number" class="text-preset-4" />
+                <input type="number" class="text-preset-4 height-input" />
                 <span class="unit">cm</span>
               </div>
 
               <div class="weight text-preset-7--regular">
                 <p>Weight</p>
-                <input type="number" class="text-preset-4" />
+                <input type="number" class="text-preset-4 weight-input" />
                 <span class="unit">kg</span>
               </div>
             </div>
@@ -210,6 +221,6 @@
       </section>
     </main>
 
-    <script src="app.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
