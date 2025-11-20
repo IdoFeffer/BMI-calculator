@@ -49,25 +49,95 @@
               </div>
             </div>
 
-            <div class="input-container flex-row">
-              <div class="height text-preset-7-regular">
-                <p>Height</p>
-                <input type="number" class="text-preset-4 height-input" />
-                <span class="unit">cm</span>
+            <div class="input-container">
+              <!-- 🔹 Metric -->
+              <div class="fields fields-metric is-active">
+                <div class="field-group">
+                  <p>Height</p>
+                  <div class="field">
+                    <input type="number" class="text-preset-4 height-input" />
+                    <span class="unit">cm</span>
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <p>Weight</p>
+                  <div class="field">
+                    <input type="number" class="text-preset-4 weight-input" />
+                    <span class="unit">kg</span>
+                  </div>
+                </div>
               </div>
 
-              <div class="weight text-preset-7--regular">
-                <p>Weight</p>
-                <input type="number" class="text-preset-4 weight-input" />
-                <span class="unit">kg</span>
+              <!-- 🔹 Imperial -->
+              <div class="fields fields-imperial">
+                <div class="field-group">
+                  <p>Height</p>
+                  <div class="field-row">
+                    <div class="field">
+                      <input
+                        type="number"
+                        class="text-preset-4 height-ft-input"
+                      />
+                      <span class="unit">ft</span>
+                    </div>
+                    <div class="field">
+                      <input
+                        type="number"
+                        class="text-preset-4 height-in-input"
+                      />
+                      <span class="unit">in</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <p>Weight</p>
+                  <div class="field-row">
+                    <div class="field">
+                      <input
+                        type="number"
+                        class="text-preset-4 weight-st-input"
+                      />
+                      <span class="unit">st</span>
+                    </div>
+                    <div class="field">
+                      <input
+                        type="number"
+                        class="text-preset-4 weight-lb-input"
+                      />
+                      <span class="unit">lbs</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
             <div class="blue-box">
-              <p class="text-preset-4">Welcome!</p>
-              <p class="text-preset-7-regular">
-                Enter your height and weight and you'll use your BMI result here
-              </p>
+              <!-- Initial state (before BMI is calculated) -->
+              <div class="blue-initial">
+                <p class="text-preset-4 welcome-message">Welcome!</p>
+                <p class="text-preset-7-regular">
+                  Enter your height and weight and you'll use your BMI result
+                  here
+                </p>
+              </div>
+
+              <!-- Result state (shown after BMI is calculated) -->
+              <div class="blue-result" hidden>
+                <div class="blue-box-container">
+                  <div class="bmi-left">
+                    <p class="text-preset-4 your-bmi">Your BMI is...</p>
+                    <p class="bmi-value text-preset-2">--</p>
+                  </div>
+
+                  <div class="bmi-right">
+                    <p class="text-preset-7-regular bmi-message">
+                      Your BMI result will appear here.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </aside>
         </div>

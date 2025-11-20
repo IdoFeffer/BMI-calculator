@@ -6,76 +6,136 @@
   padding: var(--spacing-600);
 }
 
-.opt-1 {
-  margin-right: 11.5em;
+/* רדיו */
+.checkbox-container {
+  margin: var(--spacing-400) 0;
+  display: flex;
+  gap: var(--spacing-1600);
 }
 
-.height,
-.weight {
-  position: relative; 
+/* הקונטיינר של השדות */
+.input-container {
+  margin-bottom: var(--spacing-400);
+}
+
+/* -------- שדות מטרי / אימפריאלי -------- */
+
+.fields {
+  display: none;
+  gap: var(--spacing-300);
+}
+
+.fields.is-active {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Height + Weight זה לצד זה */
+  gap: var(--spacing-300);
+}
+
+.field-group {
   display: flex;
   flex-direction: column;
 }
 
-.height input,
-.weight input {
-  max-width: 238px;
+.field-group p {
+  color: var(--grey-500);
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+/* בשדות אימפריאל – בפנים יש שתי קופסאות (ft/in או st/lbs) */
+.fields-imperial .field-row {
+  display: flex;
+  gap: var(--spacing-300);
+}
+
+/* -------- הקופסה של האינפוט (מחליף .height / .weight הישנים) -------- */
+
+.field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.field input {
+  width: 100%;
   height: 61px;
   border-radius: 12px;
   border: 1px solid var(--grey-500);
   outline: none;
 
   padding-inline-start: var(--spacing-300);
-  padding-inline-end: calc(var(--spacing-900)); 
+  padding-inline-end: var(--spacing-900);
 
   text-align: right;
   transition: border-color 0.2s ease;
 }
 
-.height input:not(:placeholder-shown),
-.weight input:not(:placeholder-shown) {
+/* כשהאינפוט לא ריק – להחזיר טקסט לשמאל כמו קודם */
+.field input:not(:placeholder-shown) {
   text-align: left;
 }
 
-.height input:focus,
-.weight input:focus {
+.field input:focus {
   border: 1px solid var(--blue-500);
 }
 
-.unit {
+/* היחידה (cm / kg / ft / in / st / lbs) */
+.field .unit {
   font-size: 1.5em;
   position: absolute;
   inset-inline-end: var(--spacing-400);
-  top: 60%;
+  top: 48%;
   transform: translateY(-50%);
   color: var(--blue-500);
   font-weight: var(--fw-semibold);
-  pointer-events: none; 
+  pointer-events: none;
 }
 
-.bmi-title {
-  font-size: var(--fs);
-}
-
-.input-container {
-  gap: var(--spacing-300);
-  border-radius: 12px;
-  margin-bottom: var(--spacing-400);
-}
-
-.input-container p {
-  color: var(--grey-500);
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.checkbox-container {
-  margin: var(--spacing-400) 0;
-}
-
+/* הקופסה הכחולה */
 .blue-box {
   color: var(--white);
   background-color: var(--blue-500);
   padding: var(--spacing-400);
   border-radius: 16px 99px 99px 16px;
+  width: 500px;
+}
+
+.fields-metric.is-active {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--spacing-300);
+}
+
+/* Imperial: Height row, then Weight row (full width) */
+.fields-imperial.is-active {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--spacing-300);
+}
+
+.bmi-value {
+  margin: 0px;
+}
+
+.welcome-message {
+  margin: 0 0 var(--spacing-200);
+}
+
+.bmi-message {
+    margin: 0 0 var(--spacing-100);
+}
+
+.your-bmi {
+  margin: 0 0 var(--spacing-100);
+}
+
+.bmi-right {
+  width: 206px;
+}
+
+
+.blue-box-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
