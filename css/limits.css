@@ -1,29 +1,82 @@
-
-.limitations {
-    width: 564px;
-}
-.limits-main-header {
-    margin: 0 0 var(--spacing-400);
-    color: var(--blue-900);
-}
-.limits-p {
-    margin: 0px;
-    color: var(--grey-500);
-}
-
-.cards-flow {
+.limit-panel {
     margin: var(--spacing-1300) var(--spacing-1800);
 }
 
+.cards-flow {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-1100);
+  margin-top: var(--spacing-1300);
+}
+
+.limitations {
+  max-width: 540px;
+}
+
+.limits-main-header,
+.limits-header {
+  margin: 0 0 var(--spacing-400);
+  color: var(--blue-900);
+}
+
+.limits-p {
+  margin: 0;
+  color: var(--grey-500);
+}
+
+/* --- מכולת הכרטיסים --- */
+.limit-cards {
+  position: relative;
+  width: 900px;
+  height: 600px;
+}
+
+/* בסיס לכל הכרטיסים */
 .limit-card {
-    width: 365px;
-    padding: var(--spacing-400);
+  position: absolute;
+  width: 360px;
+  height: 232px;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 32px 60px rgba(37, 51, 71, 0.08);
+}
+
+/* כותרות וטקסט בתוך כרטיס */
+.limit-header {
+  margin: 0 0 var(--spacing-200);
+  color: var(--blue-900);
 }
 
 .limit-p {
-    margin: 0px;
+  margin: 0;
+  color: var(--grey-500);
 }
 
-.limit-header {
-    margin: 0 0 var(--spacing-200);
+/* --- מיקומים (מאוד קרוב לפיגמה) --- */
+
+/* Gender – למעלה באמצע-ימינה */
+/* Gender – למעלה */
+.limit-gender {
+  top: 0;
+  left: 280px;
+}
+
+.limit-age {
+  top: 220px;   
+  left: 150px;
+}
+
+.limit-muscle {
+  top: 230px;
+  left: 540px;  
+}
+
+.limit-pregnancy {
+  top: 440px;   
+  left: 70px;
+}
+
+.limit-race {
+  top: 460px;   
+  left: 430px;
 }

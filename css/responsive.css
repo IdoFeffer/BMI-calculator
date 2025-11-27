@@ -1,0 +1,79 @@
+/* TABLET LAYOUT */
+@media (max-width: 1024px) {
+  /* BMI section  */
+
+  .bg-gradient {
+    background: linear-gradient(180deg, #d3e0fe 0%, #d6eaf6 100%);
+    height: 829px;
+    border-bottom-left-radius: 2000px;
+    border-bottom-right-radius: 200px;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 60px;
+  }
+
+  #hero .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: var(--spacing-700);
+    margin-top: 0;
+  }
+
+  .hero-copy {
+    max-width: 500px;
+    /* margin: 0 auto; */
+  }
+  .hero-copy h1 {
+    text-align: center;
+  }
+
+  .hero-copy p {
+    text-align: center;
+  }
+  .bmi-card {
+    max-width: 686px;
+  }
+
+  /* TIPS  */
+
+
+
+
+    .grid-3 {
+    display: flex !important;
+    flex-direction: column;
+    gap: var(--spacing-500); /* רווחים בין כל כרטיס */
+    padding: 50px 39px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 690px;
+  }
+
+  .tip-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: var(--spacing-500);
+    padding: 20px 0;
+  }
+
+  .tips-words {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+    margin-left: 0;
+  }
+
+  .tips-header {
+    margin: 0;
+  }
+
+  .tips-p {
+    width: auto; 
+    width: 582px;
+    margin: 0;
+  }
+}

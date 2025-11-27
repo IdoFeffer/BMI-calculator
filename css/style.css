@@ -8,26 +8,19 @@ body {
 }
 
 .container {
-  width: min(1120px, 92vw);
+  width: min(1024px);
   margin-inline: auto;
-  /* padding-block: var(--spacing-700); */
 }
 
-@media (max-width: 900px) {
-  .grid-2,
-  .grid-3 {
-    grid-template-columns: 1fr;
-  }
-}
 
-.snap {
+/* .snap {
   height: 100vh;
   overflow-y: auto;
   scroll-snap-type: y mandatory;
-}
+} */
 .panel {
-  min-height: 100vh;
-  scroll-snap-align: start;
+  min-height: 60vh;
+  /* scroll-snap-align: start; */
   position: relative;
   display: flex;
   align-items: center;
