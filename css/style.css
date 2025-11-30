@@ -3,7 +3,6 @@
 }
 
 body {
-  margin: 0;
   font-family: var(--ff-primary);
 }
 
@@ -18,9 +17,10 @@ body {
   overflow-y: auto;
   scroll-snap-type: y mandatory;
 } */
+
+/* scroll-snap-align: start; */
 .panel {
-  min-height: 60vh;
-  /* scroll-snap-align: start; */
+  min-height: 100vh;
   position: relative;
   display: flex;
   align-items: center;

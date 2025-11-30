@@ -37,15 +37,20 @@
     max-width: 686px;
   }
 
+  /* Meaning  */
+
+  .grid-2 {
+    
+    padding: 0 var(--spacing-1800);
+  }
+
+
   /* TIPS  */
 
-
-
-
     .grid-3 {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
-    gap: var(--spacing-500); /* רווחים בין כל כרטיס */
+    gap: var(--spacing-500); 
     padding: 50px 39px;
     margin: 0 auto;
     width: 100%;
@@ -76,4 +81,24 @@
     width: 582px;
     margin: 0;
   }
+
+
+  /* Limits  */
+
+  /* .limit-cards {
+    position: static;        
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-400);
+  } */
+
+  .limit-card {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+  
 }

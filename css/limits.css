@@ -1,5 +1,6 @@
+
 .limit-panel {
-    margin: var(--spacing-1300) var(--spacing-1800);
+  margin: var(--spacing-1300) var(--spacing-1800);
 }
 
 .cards-flow {
@@ -24,14 +25,12 @@
   color: var(--grey-500);
 }
 
-/* --- מכולת הכרטיסים --- */
 .limit-cards {
   position: relative;
   width: 900px;
   height: 600px;
 }
 
-/* בסיס לכל הכרטיסים */
 .limit-card {
   position: absolute;
   width: 360px;
@@ -39,9 +38,9 @@
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 32px 60px rgba(37, 51, 71, 0.08);
+  background-color: var(--white);
 }
 
-/* כותרות וטקסט בתוך כרטיס */
 .limit-header {
   margin: 0 0 var(--spacing-200);
   color: var(--blue-900);
@@ -52,31 +51,78 @@
   color: var(--grey-500);
 }
 
-/* --- מיקומים (מאוד קרוב לפיגמה) --- */
-
-/* Gender – למעלה באמצע-ימינה */
-/* Gender – למעלה */
 .limit-gender {
   top: 0;
   left: 280px;
 }
 
 .limit-age {
-  top: 220px;   
+  top: 220px;
   left: 150px;
 }
 
 .limit-muscle {
   top: 230px;
-  left: 540px;  
+  left: 540px;
 }
 
 .limit-pregnancy {
-  top: 440px;   
+  top: 440px;
   left: 70px;
 }
 
 .limit-race {
-  top: 460px;   
+  top: 460px;
   left: 430px;
+}
+
+/* ============ Tablet (עד 1024px) ============ */
+
+@media (max-width: 1024px) {
+
+  .limit-panel {
+    margin: var(--spacing-900) auto;
+  }
+
+  .cards-flow {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-700);
+    margin-top: var(--spacing-700);
+  }
+
+  .limitations {
+    max-width: 520px;
+    text-align: center;
+  }
+
+  .limits-main-header {
+    margin-bottom: var(--spacing-300);
+  }
+
+  .limit-cards {
+    position: static;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--spacing-400);
+  }
+
+  .limit-card {
+    position: static;
+    width: auto;
+    height: auto;
+  }
+
+  .limit-race {
+    grid-column: 1 / -1;
+    width: 300px !important;
+    margin-left: 13em;
+
+  }
+
+
 }
