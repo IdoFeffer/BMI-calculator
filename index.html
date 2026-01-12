@@ -1,301 +1,110 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BMI Calculator</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI</title>
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <main class="snap">
-      <!-- 1) Main -->
-      <section id="hero" class="panel">
-        <div class="container grid-2">
-          <div class="hero-copy">
-            <h1 class="text-preset-1">
-              Body Mass<br />
-              Index Calculator
-            </h1>
-
-            <p class="text-preset-6--regular">
+    <div class="body-container">
+      <section class="bmi-section">
+        <img src="" alt="" />
+        <div class="bmi-box flex-row">
+          <div class="bmi-text flex-column">
+            <p class="bmi-title">Body Mass Index Calculator</p>
+            <p class="bmi-p">
               Better understand your weight in relation to your height using our
-              body mass index (BMI) calculator. While BMI is not the sole
+              body mass index (BM) calculator. While BMI is not the sole
               determinant of a healthy weight, it offers a valuable starting
               point to evaluate your overall health and well-being.
             </p>
           </div>
 
-          <aside class="bmi-card card">
-            <p class="text-preset-4">Enter your details below</p>
-            <div class="checkbox-container flex-row">
-              <div class="opt-1">
-                <input
-                  type="radio"
-                  id="opt-metric"
-                  name="unit"
-                  value="metric"
-                  checked
-                />
-                <label for="opt-metric">Metric</label>
-              </div>
-              <div class="opt-2">
-                <input
-                  type="radio"
-                  id="opt-imperial"
-                  name="unit"
-                  value="imperial"
-                />
-                <label for="opt-imperial">Imperial</label>
-              </div>
+          <div class="bmi-calculator">
+            <p class="calc-title">Enter your details below</p>
+
+            <div class="units-toggle">
+              <label class="radio-pill">
+                <input type="radio" name="units" value="metric" checked />
+                <span class="radio-ui"></span>
+                <span class="radio-text">Metric</span>
+              </label>
+
+              <label class="radio-pill">
+                <input type="radio" name="units" value="imperial" />
+                <span class="radio-ui"></span>
+                <span class="radio-text">Imperial</span>
+              </label>
             </div>
 
-            <div class="input-container">
-              <!-- 🔹 Metric -->
-              <div class="fields fields-metric is-active">
-                <div class="field-group">
-                  <p>Height</p>
-                  <div class="field">
-                    <input type="number" class="text-preset-4 height-input" />
-                    <span class="unit">cm</span>
+            <div class="inputs-grid">
+              <!-- METRIC -->
+              <div class="inputs-set" data-set="metric">
+                <div class="input-group">
+                  <label class="input-label" for="height-cm">Height</label>
+                  <div class="input-wrap">
+                    <input id="height-cm" class="calc-input" type="number" />
+                    <span class="input-unit">cm</span>
                   </div>
                 </div>
 
-                <div class="field-group">
-                  <p>Weight</p>
-                  <div class="field">
-                    <input type="number" class="text-preset-4 weight-input" />
-                    <span class="unit">kg</span>
+                <div class="input-group">
+                  <label class="input-label" for="weight-kg">Weight</label>
+                  <div class="input-wrap">
+                    <input id="weight-kg" class="calc-input" type="number" />
+                    <span class="input-unit">kg</span>
                   </div>
                 </div>
               </div>
 
-              <!-- 🔹 Imperial -->
-              <div class="fields fields-imperial">
-                <div class="field-group">
-                  <p>Height</p>
-                  <div class="field-row">
-                    <div class="field">
-                      <input
-                        type="number"
-                        class="text-preset-4 height-ft-input"
-                      />
-                      <span class="unit">ft</span>
+              <!-- IMPERIAL -->
+              <div class="inputs-set is-hidden" data-set="imperial">
+                <div class="input-group">
+                  <label class="input-label">Height</label>
+                  <div class="input-split">
+                    <div class="input-wrap">
+                      <input id="height-ft" class="calc-input" type="number" />
+                      <span class="input-unit">ft</span>
                     </div>
-                    <div class="field">
-                      <input
-                        type="number"
-                        class="text-preset-4 height-in-input"
-                      />
-                      <span class="unit">in</span>
+                    <div class="input-wrap">
+                      <input id="height-in" class="calc-input" type="number" />
+                      <span class="input-unit">in</span>
                     </div>
                   </div>
                 </div>
 
-                <div class="field-group">
-                  <p>Weight</p>
-                  <div class="field-row">
-                    <div class="field">
-                      <input
-                        type="number"
-                        class="text-preset-4 weight-st-input"
-                      />
-                      <span class="unit">st</span>
+                <div class="input-group">
+                  <label class="input-label">Weight</label>
+                  <div class="input-split">
+                    <div class="input-wrap">
+                      <input id="weight-st" class="calc-input" type="number" />
+                      <span class="input-unit">st</span>
                     </div>
-                    <div class="field">
-                      <input
-                        type="number"
-                        class="text-preset-4 weight-lb-input"
-                      />
-                      <span class="unit">lbs</span>
+                    <div class="input-wrap">
+                      <input id="weight-lbs" class="calc-input" type="number" />
+                      <span class="input-unit">lbs</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="blue-box">
-              <!-- Initial state (before BMI is calculated) -->
-              <div class="blue-initial">
-                <p class="text-preset-4 welcome-message">Welcome!</p>
-                <p class="text-preset-7-regular">
-                  Enter your height and weight and you'll use your BMI result
-                  here
-                </p>
+            <div class="result-card">
+              <div class="result-left">
+                <p class="result-kicker">Your BMI is...</p>
+                <p class="result-value" id="bmi-value">--</p>
               </div>
 
-              <!-- Result state (shown after BMI is calculated) -->
-              <div class="blue-result" hidden>
-                <div class="blue-box-container">
-                  <div class="bmi-left">
-                    <p class="text-preset-4 your-bmi">Your BMI is...</p>
-                    <p class="bmi-value text-preset-2">--</p>
-                  </div>
-
-                  <div class="bmi-right">
-                    <p class="text-preset-7-regular bmi-message">
-                      Your BMI result will appear here.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <p class="result-right" id="bmi-text">
+                Enter your height and weight and you’ll see your BMI result
+                here.
+              </p>
             </div>
-          </aside>
-        </div>
-        <div class="bg-gradient"></div>
-      </section>
-
-      <!-- 2) Meaning -->
-      <section id="meaning" class="panel">
-        <div class="container grid-2">
-          <figure class="photo-card meaning-card">
-            <img src="css/assets/img/man-eating.png" class="man-eating" />
-          </figure>
-          <div class="content">
-            <h2 class="text-preset-2 meaning-h2">What your BMI result means</h2>
-
-            <p class="text-preset-6-regular meaning-p test-inter">
-              A BMI range of 18.5 to 24.9 is considered a ‘healthy weight.’
-              Maintaining a healthy weight may lower your chances of
-              experiencing health issues later on, such as obesity and type 2
-              diabetes. Aim for a nutritious diet with reduced fat and sugar
-              content, incorporating ample fruits and vegetables. Additionally,
-              strive for regular physical activity, ideally about 30 minutes
-              daily for five days a week.
-            </p>
           </div>
         </div>
       </section>
-
-      <!-- 3) Tips -->
-      <section id="tips" class="panel panel-tips">
-        <div class="container container-tips grid-3">
-          <article class="tip-card">
-            <div class="tip-icon icon-pink">
-              <img src="css/assets/img/eating.png" alt="" class="tip-img" />
-            </div>
-            <div class="tips-words">
-              <h3 class="text-preset-4 tips-header">Healthy eating</h3>
-              <p class="text-preset-6-regular tips-p">
-                Healthy eating promotes weight control, disease prevention,
-                better digestion, immunity, mental clarity, and mood.
-              </p>
-            </div>
-          </article>
-
-          <article class="tip-card">
-            <div class="tip-icon icon-orange">
-              <img src="css/assets/img/exercise.png" alt="" class="tip-img" />
-            </div>
-            <div class="tips-words">
-              <h3 class="text-preset-4 tips-header">Regular exercise</h3>
-              <p class="text-preset-6-regular tips-p">
-                Exercise improves fitness, aids weight control, elevates mood,
-                and reduces disease risk, fostering wellness and longevity.
-              </p>
-            </div>
-          </article>
-
-          <article class="tip-card">
-            <div class="tip-icon icon-blue">
-              <img src="css/assets/img/sleep.png" alt="" class="tip-img" />
-            </div>
-            <div class="tips-words">
-              <h3 class="text-preset-4 tips-header">Adequate sleep</h3>
-              <p class="text-preset-6-regular tips-p">
-                Sleep enhances mental clarity, emotional stability, and physical
-                wellness, promoting overall restoration and rejuvenation.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- 4) Limitations -->
-      <section id="limits" class="limit-panel">
-        <div class="cards-flow">
-          <div class="limitations">
-            <h2 class="text-preset-2 limits-main-header">Limitations of BMI</h2>
-
-            <p class="text-preset-6-regular limit-p">
-              Although BMI is often a practical indicator of healthy weight, it
-              is not suited for every person. Specific groups should carefully
-              consider their BMI outcomes, and in certain cases, the measurement
-              may not be beneficial to use.
-            </p>
-          </div>
-
-          <div class="limit-cards">
-            <article class="limit-card">
-              <div class="flex-row">
-                <div class="limit-icon">
-                  <img src="css/assets/img/gender.png" alt="Gender icon" />
-                </div>
-                <h3 class="text-preset-4 limit-header">Gender</h3>
-              </div>
-              <p class="text-preset-6-regular limit-p">
-                The development and body fat composition of girls and boys vary
-                with age. Consequently, a child's age and gender are considered
-                when evaluating their BMI.
-              </p>
-            </article>
-
-            <article class="limit-card limit-age">
-              <div class="flex-row">
-                <div class="limit-icon">
-                  <img src="css/assets/img/cake.png" alt="Age icon" />
-                </div>
-                <h3 class="text-preset-4 limit-header">Age</h3>
-              </div>
-              <p class="text-preset-6-regular limit-p">
-                In aging individuals, increased body fat and muscle loss may
-                cause BMI to underestimate body fat content.
-              </p>
-            </article>
-
-            <article class="limit-card limit-muscle">
-              <div class="flex-row">
-                <div class="limit-icon">
-                  <img src="css/assets/img/muscle.png" alt="Muscle icon" />
-                </div>
-                <h3 class="text-preset-4 limit-header">Muscle</h3>
-              </div>
-              <p class="text-preset-6-regular limit-p">
-                BMI may misclassify muscular individuals as overweight or obese,
-                as it doesn't differentiate muscle from fat.
-              </p>
-            </article>
-
-            <article class="limit-card limit-pregnancy">
-              <div class="flex-row">
-                <div class="limit-icon">
-                  <img src="css/assets/img/pregency.png" alt="Pregnancy icon" />
-                </div>
-                <h3 class="text-preset-4 limit-header">Pregnancy</h3>
-              </div>
-              <p class="text-preset-6-regular limit-p">
-                Expectant mothers experience weight gain due to their growing
-                baby. Maintaining a healthy pre-pregnancy BMI is advisable to
-                minimise health risks for both mother and child.
-              </p>
-            </article>
-
-            <article class="limit-card limit-race">
-              <div class="flex-row">
-                <div class="limit-icon">
-                  <img src="css/assets/img/race.png" alt="Race icon" />
-                </div>
-                <h3 class="text-preset-4 limit-header">Race</h3>
-              </div>
-              <p class="text-preset-6-regular limit-p">
-                Certain health concerns may affect individuals of some Black and
-                Asian origins at lower BMIs than others. To learn more, it is
-                advised to discuss this with your GP or practice nurse.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-    </main>
+    </div>
 
     <script src="main.js"></script>
   </body>

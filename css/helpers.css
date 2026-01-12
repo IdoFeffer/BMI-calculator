@@ -1,11 +1,15 @@
 .flex {
-    display: flex;
+  display: flex;
 }
 .flex-row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 .flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
 }
