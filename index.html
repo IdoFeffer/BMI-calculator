@@ -10,7 +10,7 @@
     <div class="body-container">
       <section class="bmi-section">
         <img src="" alt="" />
-        <div class="bmi-box flex-row">
+        <div class="bmi-box">
           <div class="bmi-text flex-column">
             <p class="bmi-title">Body Mass Index Calculator</p>
             <p class="bmi-p">
@@ -21,7 +21,7 @@
             </p>
           </div>
 
-          <div class="bmi-calculator">
+          <div class="bmi-calculator flex-column">
             <p class="calc-title">Enter your details below</p>
 
             <div class="units-toggle">
@@ -40,7 +40,7 @@
 
             <div class="inputs-grid">
               <!-- METRIC -->
-              <div class="inputs-set" data-set="metric">
+              <div class="inputs-set-metric" data-set="metric">
                 <div class="input-group">
                   <label class="input-label" for="height-cm">Height</label>
                   <div class="input-wrap">
@@ -59,7 +59,7 @@
               </div>
 
               <!-- IMPERIAL -->
-              <div class="inputs-set is-hidden" data-set="imperial">
+              <div class="inputs-set-imperial is-hidden" data-set="imperial">
                 <div class="input-group">
                   <label class="input-label">Height</label>
                   <div class="input-split">
@@ -102,6 +102,32 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="bmi-explane">
+        <div class="explane-container grid">
+          <div class="man-eat-container">
+            <img src="assets/img/man-eating.png" class="man-eat-img" alt="" />
+          </div>
+          <div class="explane-text">
+            <p class="explane-title">What your BMI result means</p>
+            <p class="explane-p">
+              A BMI range of 18.5 to 24.9 is considered a 'healthy weight.'
+              Maintaining a healthy weight may lower your chances of
+              experiencing health issues later on, such as obesity and type 2
+              diabetes. Aim for a nutritious diet with reduced fat and sugar
+              content, incorporating ample fruits and vegetables. Additionally,
+              strive for regular physical activity, ideally about 30 minutes
+              daily for five days a week.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="tips-section">
+        <div class="tips-container flex-row">
+
         </div>
       </section>
     </div>
