@@ -1,26 +1,17 @@
 .explane-container {
-  grid-template-columns: 1fr 1fr;
-  place-items: self-end;
   padding: var(--space-400) var(--space-1800);
-  gap: var(--space-1200);
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-1600);
 }
 
 .explane-title {
-  font-size: 48px;
-  font-weight: 600;
-  font-family: var(--ff-primary);
-  line-height: 1.1;
-  letter-spacing: var(--ls-tight);
+  font: var(--tp-2);
 }
 
 .explane-p {
-  
   color: var(--grey-500);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: var(--ls-normal);
-  max-width: fit-content;
+  font: var(--tp-6-regular);
 }
 
 .man-eat-img {
@@ -31,4 +22,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-400);
+  margin-top: 8rem;
+
+  width: 465px;
 }

@@ -1,5 +1,7 @@
 .limitaion-section {
   padding-top: var(--space-1300);
+  padding-left: var(--space-1800);
+  padding-right: var(--space-1800);
 }
 
 .limitation-title {
@@ -10,15 +12,12 @@
   font: var(--tp-6-regular);
   color: var(--grey-500);
 }
+
 .limitaion-text {
   position: relative;
   gap: var(--space-400);
   width: 539px;
   left: 0px;
-}
-
-.limitaion-container {
-  padding-left: var(--space-1800);
 }
 
 .limit-card {
@@ -47,11 +46,10 @@
   bottom: 12rem;
   left: 60%;
 }
-
 .card-2 {
   position: relative;
   bottom: 150px;
-  right: -44%;
+  right: -41%;
 }
 .card-3 {
   position: relative;
@@ -61,10 +59,10 @@
 .card-4 {
   position: relative;
   bottom: 19em;
-  left: 34%;
+  left: 29%;
 }
 .card-5 {
   position: relative;
   bottom: 33.5em;
-  left: 55%;
+  left: 53.5%;
 }

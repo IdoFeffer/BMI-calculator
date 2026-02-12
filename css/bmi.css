@@ -1,7 +1,11 @@
 .bmi-section {
   height: auto;
 }
-
+.img-bmi{
+  position: relative;
+  top: 1em;
+  left: 8.5rem;
+}
 .bmi-box {
   margin: var(--space-400) var(--space-1800) 0px ;
   gap: var(--space-400);

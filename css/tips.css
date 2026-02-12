@@ -1,6 +1,10 @@
 .tips-container {
   padding: var(--space-1200) var(--space-1800);
   gap: var(--space-400);
+  justify-content: center;
+}
+.tip-box {
+  width: 365px;
 }
 .tip-img {
   margin-bottom: var(--space-600);
