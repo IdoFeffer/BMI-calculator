@@ -1,0 +1,70 @@
+.limitaion-section {
+  padding-top: var(--space-1300);
+}
+
+.limitation-title {
+  font: var(--tp-2);
+}
+
+.limitaion-p {
+  font: var(--tp-6-regular);
+  color: var(--grey-500);
+}
+.limitaion-text {
+  position: relative;
+  gap: var(--space-400);
+  width: 539px;
+  left: 0px;
+}
+
+.limitaion-container {
+  padding-left: var(--space-1800);
+}
+
+.limit-card {
+  width: 301px;
+  gap: var(--space-200);
+  padding: var(--space-400);
+  border: 1px solid black;
+  border-radius: 16px;
+}
+
+.limit-upper {
+  align-items: center;
+  gap: var(--space-200);
+}
+
+.card-title {
+  font: var(--tp-5);
+}
+.card-p {
+  font: var(--tp-6-regular);
+  color: var(--grey-500);
+}
+
+.card-1 {
+  position: relative;
+  bottom: 12rem;
+  left: 60%;
+}
+
+.card-2 {
+  position: relative;
+  bottom: 150px;
+  right: -44%;
+}
+.card-3 {
+  position: relative;
+  bottom: 21rem;
+  left: 66%;
+}
+.card-4 {
+  position: relative;
+  bottom: 19em;
+  left: 34%;
+}
+.card-5 {
+  position: relative;
+  bottom: 33.5em;
+  left: 55%;
+}

@@ -1,0 +1,21 @@
+.tips-container {
+  padding: var(--space-1200) var(--space-1800);
+  gap: var(--space-400);
+}
+.tip-img {
+  margin-bottom: var(--space-600);
+}
+.tip-title {
+  margin-bottom: var(--space-300);
+  font: var(--tp-4);
+}
+.tip-p {
+  color: var(--grey-500);
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.tip-p:last-child {
+    font-size: 14.5px;
+}
+
